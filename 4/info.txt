@@ -1,0 +1,12 @@
+Cara membuat js dengan terminal = touch lalu vi namaFile
+
+untuk mulai menulis tekan i terlebih dahulu(INSERT)
+setelah selesai pencet escape lalu ketik :wq
+
+untuk menjalankan sebuah file js lewat node adalah dengan
+masuk ke node lewat terminal
+lalu .load namaFile
+
+untuk menyimpan hasil buat dalam node kedalam file, maka ketik .save namaFileHasilSave
+
+mode editor pada repl .editor

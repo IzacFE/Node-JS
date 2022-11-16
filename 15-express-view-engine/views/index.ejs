@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("components/header") %>
+  </head>
+  <body>
+    <%- include("components/navbar") %>
+    <main>
+      <h1>Home</h1>
+      <h2>Halo <%= nama %></h2>
+      <p>Ini adalah list mahasiswa</p>
+      <% if (mahasiswa.length==0) { %> Tidak ada mahasiswa <% }else{ %>
+      <ol>
+        <% mahasiswa.forEach(value => { %>
+        <li><%= value.nama %></li>
+        <% })} %>
+      </ol>
+    </main>
+    <%- include("components/footer") %>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("components/header") %>
+  </head>
+  <body>
+    <%- include("components/navbar") %>
+    <main>
+      <h1>Contact</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nama</th>
+            <th>Email</th>
+            <th>No Hp</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+        <% contacts.forEach((contact,index) => { %>
+          <tr>
+            <th><%= index+1 %></th>
+            <td><%= contact.nama %></td>
+            <td><%= contact.email %></td>
+            <td><%= contact.nohp %></td>
+            <td><a href="/contact/<%= contact.nama %> "><div style="background-color: yellow;">Detail</div></a></td>
+          </tr>
+        <% }) %>
+        </tbody>
+      </table>
+    </main>
+    <%- include("components/footer") %>
+  </body>
+</html>
